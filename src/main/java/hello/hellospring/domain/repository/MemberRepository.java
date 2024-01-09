@@ -14,4 +14,6 @@ public interface MemberRepository {
     Optional<Member> findByName(String name);
     // 지금까지 저장된 모든 회원들의 정보를 찾음
     List<Member> findAll();
+
+    void clearStore();
 }
